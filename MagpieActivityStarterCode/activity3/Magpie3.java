@@ -86,15 +86,11 @@ public class Magpie3
 			String before = " ", after = " ";
 			if (psn > 0)
 			{
-				before = phrase.substring(psn - 1, psn)
-						.toLowerCase();
+				before = phrase.substring(psn - 1, psn).toLowerCase();
 			}
 			if (psn + goal.length() < phrase.length())
 			{
-				after = phrase.substring(
-						psn + goal.length(),
-						psn + goal.length() + 1)
-						.toLowerCase();
+				after = phrase.substring(psn + goal.length(), psn + goal.length() + 1).toLowerCase();
 			}
 
 			// If before and after aren't letters, we've
@@ -167,6 +163,13 @@ public class Magpie3
 		}
 
 		return response;
+	}
+	
+	/**
+	 * This method is a dummy test for creating a javaDoc
+	 * @param dud
+	 */
+	public void doNothing (int blank) {
 	}
 
 }
